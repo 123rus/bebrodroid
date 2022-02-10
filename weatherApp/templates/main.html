@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %} Прогноз погоды {% endblock %}
+
+{% block content %}
+<main class="flex-shrink-0">
+    <div class="container">
+      <h2 class="mt-5" style="margin-bottom: 80px; font-size: 50px;"><b>Прогноз погоды в городе {{city}}:</b></h2>
+      <p class="lead"></code></p>
+      <p><a href="/docs/5.0/examples/sticky-footer/"></a></p>
+    </div>
+  </main>
+<div class="container" style="display: flex;">
+  <img src="{{weather}}" alt="">
+  
+  <div class="container">
+    <h3 style="margin-left: 120px; margin-bottom: 20px;">Температура в городе {{city}} в данный момент &nbsp;: &nbsp; &nbsp; {{coord}}℃</h3>
+    <h3 style="margin-left: 120px; margin-bottom: 20px;">Ощущается как &nbsp;: &nbsp; &nbsp; {{flike}}℃</h3>
+    <h3 style="margin-left: 120px; margin-bottom: 20px;">Максимальная температура за сегодняшний день в городе {{city}} &nbsp;: &nbsp; &nbsp; {{max_temp}}℃</h5>
+    <h3 style="margin-left: 120px; margin-bottom: 20px;">Минимальная температура за сегодняшний день в городе {{city}} &nbsp;: &nbsp; &nbsp; {{min_temp}}℃</h3>
+  </div>
+</div>
+<!-- <p>{{data}}</p> -->
+
+{% endblock %}
